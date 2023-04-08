@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <div class="rectangle" id="rectangle"></div>
+    <header>
+        
+        <div class="menu_wrapper">
+              <div id="circle"><img src="images/Circle.svg"></div>
+              <div id="About" style="position: relative;">
+                  Меню
+                  <div id="About-menu">
+                    <div class="About-menu">Услуги</div>
+                    <div class="About-menu">Статьи</div>
+                    <div class="About-menu">Вакансии</div>
+                    <div class="About-menu">Франшиза</div>
+                  </div>
+              </div>
+              <div><a href="#">Портфолио</a></div>
+              <div><a href="#">Цены</a></div>
+              <div><a href="#">Схема работы</a></div>
+              <div><a href="#">Отзывы</a></div>
+              <div><a href="#">Контакты</a></div>
+              <div><a href="#">Гарантия</a></div>
+              <div><a href="#"></a></div>
+              <button class="button_call">Обратный звонок</button>
+        </div>
+      
+      
+    </header>
+  
+    <section class="section">
+      <div class="container">
+
+        <div class="description">
+
+          <div class="description_title">Ремонт под ключ от 2900 руб/м<sup>2</sup>.</div>
+
+          <div class="description_subtitle">При заказе ремонта делаем дизайн-проект в подарок</div>
+
+          <div class="description_items">
+            <div class="description_item">
+              <img src="images/Car.svg">
+              <div class="description_text">Бесплатный выезд в день обращения</div>
+            </div>
+            <div class="description_item">
+              <img src="images/Guarantee.svg">
+              <div class="description_text">Гарантия на работу до 5 лет</div>
+            </div>
+            <div class="description_item">
+              <img src="images/Deadlines.svg">
+              <div class="description_text">Жесткое соблюдение сроков</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="calculation">
+          <form method="post" class="calculation_form">
+            <div class="calculation_title">Рассчитайте стоимость ремонта</div>
+            <div class="content_subtitle">
+              <div class="calculation_subtitle">Площадь квартиры:</div>
+               <div class="square"><p id="one"></sup></div>
+            </div>
+            <input id="r1" type="range" min="0" max="200" step="1" value="34" > 
+
+            <div class="calculation_subtitle">Тип жилья:</div>
+
+            <div class="form_radio_out">
+
+            <div class="form_radio">
+              <input class="radio_button" id="radio-1" type="radio" name="radio_type" value="second" >
+              <label id="radio-1" for="radio-1" style="width:71px;">Вторичное жильё</label>
+            </div>
+             
+            <div class="form_radio">
+              <input class="radio_button" id="radio-2" type="radio" name="radio_type" value="new">
+              <label for="radio-2">Новостройка</label>
+            </div>
+             
+            <div class="form_radio">
+              <input class="radio_button" id="radio-3" type="radio" name="radio_type" value="office">
+              <label for="radio-3">Офис</label>
+            </div>
+            
+          </div>
+
+            <div class="calculation_subtitle">Кол-во комнат:</div>
+
+            <div class="form_radio_out">
+            <div class="form_radio">
+              <input class="radio_button" id="radio-1" type="radio" name="radio_room" value="1" >
+              <label for="radio-1">1</label>
+            </div>
+             
+            <div class="form_radio">
+              <input class="radio_button" id="radio-2" type="radio" name="radio_room" value="2">
+              <label for="radio-2">2</label>
+            </div>
+             
+            <div class="form_radio">
+              <input class="radio_button" id="radio-3" type="radio" name="radio_room" value="3">
+              <label for="radio-3">3+</label>
+            </div>
+             
+            <div class="form_radio">
+              <input class="radio_button" id="radio-4" type="radio" name="radio_room" value="0" >
+              <label for="radio-4">Студия</label>
+            </div>
+            </div>
+            <div class="button_form_out">
+              <button class="button_form">Отправить</button>
+            </div>
+          </form>
+          
+
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+  
+    <footer>
+      
+    </footer>
+    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+  </body>
+</html>
